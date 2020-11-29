@@ -35,7 +35,7 @@
 
 			<div class="collapse navbar-collapse" id="ftco-nav">
 				<ul class="navbar-nav ml-auto">
-					<li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+					<!-- <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li> -->
 					<!-- <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
 					<li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li> -->
 				</ul>
@@ -314,13 +314,19 @@
 						<div class="row">
 							<div class="col-md-6 mb-2 ">
 								<div class="card text-center">
-									<button>My cv</button>
+									<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+										Resume
+									</button>
 								</div>
 
 							</div>
 							<div class="col-md-6 mb-2 ">
 								<div class="card text-center">
-									<button>Download My cv</button>
+									<a href="files/CV_2020-11-29.pdf" download>
+										<button>
+											Download Resume pdf
+										</button>
+									</a>
 								</div>
 
 							</div>
@@ -338,7 +344,7 @@
 					<div class="box">
 						<div class="our-services settings">
 							<div class="icon"> <span class="flaticon-vector"></span></div>
-							<h4>UI/UX Design</h4>
+							<h4>Front-end Developement</h4>
 							<p></p>
 						</div>
 					</div>
@@ -347,7 +353,7 @@
 					<div class="box">
 						<div class="our-services speedup">
 							<div class="icon"> <span class="flaticon-web-programming"></div>
-							<h4>Web Development</h4>
+							<h4>Back-end Development</h4>
 							<p></p>
 						</div>
 					</div>
@@ -356,7 +362,7 @@
 					<div class="box">
 						<div class="our-services privacy">
 							<div class="icon"> <span class="flaticon-layer"></span></div>
-							<h4>Product Design</h4>
+							<h4>Web application</h4>
 							<p></p>
 						</div>
 					</div>
@@ -414,7 +420,7 @@
 									<div class="desc">
 										<div class="top">
 											<span class="subheading"> Application</span>
-											<h2 class="mb-2"><a href="work.html">Client Management</a></h2>
+											<h2 class="mb-2"><a href="#">Client Management</a></h2>
 										</div>
 										<div class="absolute">
 											<p>Client CRUD</p>
@@ -446,7 +452,7 @@
 									<div class="desc text-md-right">
 										<div class="top">
 											<span class="subheading">Web Site</span>
-											<h2 class="mb-2"><a href="work.html">Khidma Pub</a></h2>
+											<h2 class="mb-2"><a href="#">Khidma Pub</a></h2>
 										</div>
 										<div class="absolute">
 											<!-- <p>Far far away, behind the word mountains, far from the countries Vokalia
@@ -475,7 +481,7 @@
 		<div class="degree-left"></div>
 	</section>
 
-	<footer class="ftco-footer ftco-section">
+	<footer class="ftco-footer ftco-section" style="padding: 2em 0 !important;">
 		<div class="container">
 			<div class="row mb-5">
 				<div class="col-md">
@@ -483,9 +489,9 @@
 						<h2 class="ftco-heading-2"><img src="images/logo.png" alt="logo" style="width:60%;"></h2>
 						<!-- <p>Far far away, behind the word mountains, far from the countries.</p> -->
 						<ul class="ftco-footer-social list-unstyled mt-5">
-							<li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
-							<li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
-							<li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
+							<li class="ftco-animate"><a href="https://github.com/laminegaci" target="_blank"><span class="fa fa-github"></span></a></li>
+							<li class="ftco-animate"><a href="https://web.facebook.com/mohamed.lamine.dev/" target="_blank"><span class="fa fa-facebook"></span></a></li>
+							<li class="ftco-animate"><a href="https://www.instagram.com/med_lam.lamine" target="_blank"><span class="fa fa-instagram"></span></a></li>
 						</ul>
 					</div>
 				</div>
@@ -509,14 +515,6 @@
 			<div class="row">
 				<div class="col-md-12 text-center">
 
-					<p>
-						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-						Copyright &copy;
-						<script>document.write(new Date().getFullYear());</script> All rights reserved | This portfolio
-						is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com"
-							target="_blank">Me</a>
-						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-					</p>
 				</div>
 			</div>
 		</div>
@@ -530,6 +528,27 @@
 			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
 				stroke="#F96D00" /></svg></div>
 
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg" role="document">
+	  <div class="modal-content">
+		<!-- <div class="modal-header">
+		  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div> -->
+		<div class="modal-body d-flex justify-content-center">
+			<img src="images/CV_2020-11-29.png" alt="">
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		  <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+		</div>
+	  </div>
+	</div>
+  </div>
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery-migrate-3.0.1.min.js"></script>
